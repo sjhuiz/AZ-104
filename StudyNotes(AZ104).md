@@ -1,1 +1,60 @@
-StudyNotes(AZ104).md
+- Mean time to recover:  example of a quality and security metric
+- SSH authentication is used when GIT Credentials or PATs are not allowed
+- A forking workflow is the only Git-Based workflow in which each developer has their own server-side repo.
+- “Feature” branch strategy provides isolation to work with new features or bugs
+- The BFG utility is the only one that can quickly delete a subset of repository files based on criteria such as size, as well as automatically update all commits and tags.
+- The git filter-branch and git filter-repo commands support rewriting history for a specific branch, which significantly reduces the repository size in this scenario.
+- git revert allows you to undo a change in a shared branch.
+- **Continuous integration** should include an **OSS vulnerability** scan. 
+- The **integrated development environment/pull request** step should include **static code analysis** and **code reviews**. 
+- **Nightly test runs** should include an **infrastructure scan**. 
+- **Continuous deployment** should include **passive penetration tests**, an **SSL scan**, and an **infrastructure scan**.
+- A patch element is the only semantic versioning that provides assurances of backward compatibility.
+- Including two jobs allows you to perform two separate builds with the minimum amount of duplication
+- Deployment groups are a logical set of target machines for deployments. 
+- Service connections are abstract credentials to external systems. These are both only in Azure Pipelines. 
+- Artifacts upload, store, and download artifacts from jobs. 
+- Approvals define approval conditions before moving further in the pipeline. 
+- Triggers are sets of events that cause the pipeline to be triggered. 
+- Artifacts, approvals, and triggers are available in both Azure Pipelines and GitHub Actions.
+- Environment represents a collection of resources targeted for deployment. 
+- Gates support the automatic collection and evaluation of external health signals prior to completing a release stage. 
+- Dependencies specify a requirement that must be met to run the next job or stage. 
+- Service connections enable a connection to a remote service that is required to execute tasks in a job.
+- PowerShell DSC uses MOF files. It does not use JSON, XML, or YAML files.
+- Terraform provides IaC functionality in multi-cloud scenarios. 
+- ARM templates, Azure Blueprints, and Bicep provide IaC functionality in Azure.
+- Azure Automation offers configuration management for an application infrastructure, not only in Azure. 
+- Release gates are used to control how deployment pipelines are released. 
+- App Configuration is used to store application configurations and implement feature flags, but it does not offer configuration management. 
+- Azure Policy is used to enforce standards and assess compliance. It does not provide inventory or change tracking.
+- Ansible provides the ability to identify Azure resources and send configurations without an agent installed. 
+- Chef and Puppet require that an agent be installed. 
+- Azure Automation requires an agent or extension.
+- The maximum duration of a build running on a Microsoft-hosted agent is six hours.
+- An OData feed provides a straightforward approach to publishing reports that show Azure Pipelines analytics
+- A PAT is used to connect a self-hosted agent to Azure Pipelines. 
+- A SAS is used to authorize access to Azure Storage, which is not applicable in this scenario.
+- Microsoft Entra service principals and managed identities do not support connecting self-hosted agents to Azure Pipelines.
+- secretsFilter provides a default value of *, which allows you to download all the secrets or a comma-separated list of secret names. 
+- runAsPreJob exposes secrets to all the tasks in a job, not just the tasks that follow. 
+- connectedServiceName selects the service connection for the Azure subscription that contains the Key Vault instance or creates a new connection. 
+- Secret is not an argument of a YAML pipeline. It is an option of the Azure pipeline CLI to create a variable and mark it as a secret.
+- With secure files, you can store files in Azure DevOps to be shared across pipelines, as well as assign proper permissions. 
+- Variable groups are used to group variables. 
+- Cache tasks are used to improve build performance
+- PATs are an alternative authentication method in Azure DevOps.
+- OWASP ZAP is designed to run penetration testing against applications, with the ZAP component performing the penetration testing. 
+- Baseline scan typically takes a couple of minutes, making it suitable for an application CI/CD pipeline. 
+- Checkmarx is a third-party tool that provides an incremental scan of changes. 
+- SonarQube is a source code analysis tool that supports specific programming languages. 
+- Mend Bolt is a source code-based tool used to search open source libraries for security/licensing issues.
+- The Azure Monitor Agent replaces the Log Analytics agent, the diagnostic extension, and the Telegraph agent. It can centrally configure data collection for different data from different sets of virtual machines, sending the data from Linux virtual machines to multiple workspaces and using XPATH queries to filter Windows events for collection. 
+- The Telegraph agent supports only Linux operating systems. 
+- The Azure Connected Machine agent is used by Azure Arc
+- Using the Dependency agent increases the number of agents installed on the target servers.
+- For dependencies of App1 to appear on the Application Map, dependency resources must be accessible via HTTP dependency calls. 
+- Metrics explorer provides direct access to aggregated data, including rates of requests, failures, and exceptions. 
+- Application Map lists the components of an app, including key metrics and alerts, but it does not provide direct access to aggregated data. 
+- Profiler allows you to inspect execution profiles of sampled requests. 
+- Usage analysis allows you to analyze user segmentation and retention.
